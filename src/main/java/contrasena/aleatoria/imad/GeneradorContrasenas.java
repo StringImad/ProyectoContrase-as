@@ -17,6 +17,7 @@ public class GeneradorContrasenas {
     public static void main(String[] args) {
         //Declaracion de variables
         int num1, num2, num3, num4;
+        String contrasenaGenerada;
         char letraGenerada;
         //Esta variable es true cuando comprueba que un numero no es impar
         boolean comprobadorImpar = true;
@@ -35,12 +36,14 @@ public class GeneradorContrasenas {
             } else {
                 comprobadorImpar = false;
             }
+            contrasenaGenerada = num1+""+num2+""+num3+""+num4;
+            System.out.println(contrasenaGenerada);
 
         } while ((num1 == num2 || num1 == num3 || num1 == num4 || num2 == num3 || num2 == num4 || num3 == num4) || comprobadorImpar);
-        System.out.println("numero 1: " + num1);
-        System.out.println("numero:2: " + num2);
-        System.out.println("numero 3: " + num3);
-        System.out.println("numero 4: " + num4);
+//        System.out.println("numero 1: " + num1);
+//        System.out.println("numero:2: " + num2);
+//        System.out.println("numero 3: " + num3);
+//        System.out.println("numero 4: " + num4);
 
     }
     // Método generadorNumeroAleatorioEntreDosRangos. Sólo se utiliza en la clase AdivinaElNumeroImad
